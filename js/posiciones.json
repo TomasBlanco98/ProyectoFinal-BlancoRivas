@@ -1,0 +1,22 @@
+[
+    {
+        "nombre":"Fabrizio",
+        "puntaje": 1
+    },
+    {
+        "nombre":"Lautaro",
+        "puntaje": 0 
+    },
+    {
+        "nombre":"Juana",
+        "puntaje": 3
+    },
+    {
+        "nombre":"Milagros",
+        "puntaje": 2 
+    },
+    {
+        "nombre":"Lionel",
+        "puntaje": 4 
+    }
+]

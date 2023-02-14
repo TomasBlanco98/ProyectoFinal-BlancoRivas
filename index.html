@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!-- tipografía -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400&display=swap" rel="stylesheet">
+    <!-- link de css -->
+    <link rel="stylesheet" href="css/main.css">
+    <title>Piedra, papel o tijera</title>
+</head>
+<body>
+    <div class="contenedor">
+
+        <header>
+            <h1>Piedra, papel o tijera</h1>
+        </header>
+
+        <main>
+            <div class="contenedorPuntos">
+                <p id="puntaje"></p>
+                <p id="mejorPuntaje"></p>
+            </div>
+            <form id="form">
+                <label for="nombre"><b>Ingrese su nombre para iniciar:</b></label>
+                <input id="nombre" type="text" placeholder="Nombre" name="nombre" required>
+                <input type="submit" value="Ingresar">
+            </form>
+            <div id="peleas" class="marcador">
+                <div id="ataque"><h3 class="mensaje">Jugador</h3></div>
+                <div id="pc"><h3>Computadora</h3></div>
+                <div id="divPeleas"></div>
+            </div>
+            <div class="botones">
+                <div>
+                    <button class="boton" data-eleccion="0"><img id="piedra" src="img/piedra.jpg" alt="Piedra"></button>
+                </div>
+                <div>
+                    <button class="boton" data-eleccion="1"><img id="papel" src="img/papel.jpg" alt="Papel" ></button>
+                </div>
+                <div>
+                    <button class="boton" data-eleccion="2"><img id="tijera" src="img/tijera.jpg" alt="Tijera"></button>
+                </div>
+            </div>
+            <div id="tablaPosiciones">
+                <h2>POSICIONES</h2>
+                <div id="contenedorPosiciones"></div>
+            </div>
+        </main>
+
+        <footer>
+            <h3>Todos los derechos reservados</h3>
+            <ul>
+                <li>email@gmail.com</li>
+            </ul>
+        </footer>
+    </div>
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

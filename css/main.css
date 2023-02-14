@@ -1,0 +1,195 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+/* estilos del body */
+body {
+    font-family: 'Lato', sans-serif;
+}
+body .contenedor {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 2fr 0.2fr;
+    grid-template-areas: 
+    "header" 
+    "main" 
+    "footer"; 
+}
+
+/* estilos del header */
+header {
+    background-color: tomato;
+    grid-area: header;
+    padding: 1rem;
+}
+header h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* estilos del main */
+main {
+    grid-area: main; 
+    background-color: rgb(241, 227, 227);
+    padding: 1rem;
+    text-align: center;
+}
+main .contenedorPuntos {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+main #puntaje {
+    background-color: rgb(248, 131, 110);
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 3px 2px 5px black;
+    text-shadow: 2px 1px 3px whitesmoke;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+main #mejorPuntaje {
+    background-color: rgb(248, 131, 110);
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 3px 2px 5px black;
+    text-shadow: 2px 1px 3px whitesmoke;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+main form {
+    padding: 1rem;
+}
+main form label {
+    text-transform: uppercase;
+}
+main .marcador {
+    background-color: rgb(248, 131, 110);
+    align-items: center;
+    height: 14rem;
+    display: grid;
+    grid-template-columns: 1fr 0.1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        "jugador resultado computadora";
+}
+main #ataque {
+    display: flex;
+    justify-content: center;
+}
+main #pc {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+main h3 {
+    text-transform: uppercase;
+    background-color: whitesmoke;
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    border: 5px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main #resultado {
+    font-size: 1.3rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    box-shadow: 3px 2px 5px black;
+    text-shadow: 2px 1px 3px whitesmoke;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 8rem;
+    grid-area: resultado;
+}
+main .rojo {
+    background-color: #fe0902;
+}
+main .azul {
+    background-color: #4628a7;
+}
+main .verde {
+    background-color: forestgreen;
+}
+main #ataque {
+    grid-area: jugador;
+}
+main #pc {
+    grid-area: computadora;
+}
+main .botones {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+main .boton {
+    width: 210px;
+    height: 210px;
+    border-radius: 200px;
+    border: 5px solid tomato;
+    box-shadow: 2px 2px 5px black;
+}
+main img {
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    cursor: pointer;
+}
+main .eleccionJugador {
+    width: 200px;
+    height: 200px;
+    border: 5px solid black;
+}
+main .eleccionComputadora {
+    width: 200px;
+    height: 200px;
+    border: 5px solid black;
+}
+main #tablaPosiciones {
+    background-color: rgb(248, 131, 110);
+    width: 340px;
+    align-items: center;
+    margin: auto;
+    margin-top: 2rem;
+    box-shadow: 2px 3px 5px black;
+    text-shadow: 2px 1px 3px whitesmoke;
+    font-weight: bold;
+}
+main #contenedorPosiciones ul {
+    margin-top: 0.3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+}
+main #contenedorPosiciones ul li {
+    list-style: none;
+    text-transform: uppercase;
+    margin: 0.7rem;
+}
+.ocultar {
+    display: none;
+}
+
+/* estilos del footer */
+footer {
+    background-color: rgb(255, 117, 92);
+    grid-area: footer; 
+}
+footer h3 {
+    font-size: 16px;
+}
+
+/* estilos de las librerias */
+.swal2-popup{
+    background-color: rgb(241, 227, 227) !important;
+}
